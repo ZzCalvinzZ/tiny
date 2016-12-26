@@ -12,7 +12,7 @@ public class DoubleJumpPowerup : Powerup {
 
 	public override void OnActivated(TinyObject tiny)
 	{
-        Debug.Log("hi");
+		Debug.Log("hi");
 		var player = (Player)tiny;
 		player.extraJumps += 1; 
 	}
@@ -20,7 +20,7 @@ public class DoubleJumpPowerup : Powerup {
 	public override void OnDeactivated(TinyObject tiny)
 	{
 		var player = (Player)tiny;
-        player.extraJumps -= 1;
+		player.extraJumps -= 1;
 	}
 
 }
